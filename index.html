@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- title -->
+    <title>Pizzabek</title>
+</head>
+<body>
+
+    <!-- body_parentElements -->
+    <div class="wrapper">
+        <div class="wrapper_nav container">
+            <div class="wrapper_nav__item">
+                <div class="wrapper_nav__item-info">
+                    <a href="./index.html" class="wrapper_nav__item__logo">
+                        <img src="./img-icons/logoPizza.svg" alt="">
+                    </a>
+                    <a href="./index.html" class="wrapper_nav__item__about">
+                        <h3>Pizzabek</h3>
+                        <p>eng mazali pitsalar faqatgina bizda)</p>
+                    </a>
+                </div>
+                <div class="wrapper_nav__input">
+                    <i class="fa-solid fa-magnifying-glass lupa"></i>
+                    <input type="search" name="searchEl" id="inputEl" placeholder="Pitsalarni qidirish">
+                </div>
+            </div>
+            <div class="wrapper_nav__bagBtn">
+                <a href="./korzinka.html" class="bag" id="bagBtn">
+                    <p>0 UZS</p>
+                    <img src="./img-icons/korzinka.svg" alt="korzinka">
+                </a>
+            </div>
+        </div>
+
+        <div class="wrapper_category container">
+                <a href="#">Barchasi</a>
+                <a href="#">Go’shtli</a>
+                <a href="#">Pishloqli</a>
+                <a href="#">Qo’ziqorinli</a>
+                <a href="#">Achchiq</a>
+        </div>
+        <div class="wrapper_info container">
+            <h3>Barcha pitsalar</h3>
+        </div>
+        <div class="wrapper_cards container" id="cards">
+        </div>
+    </div>
+
+    <!-- ModalChild-Elements -->
+
+    <div class="modal hidden">
+        <div class="PizzaMore_card" id="modalCard">
+            <div class="backBtn">
+                <img src="./img-icons/back.svg" id="backBtn" class="backSvg" alt="backBtn">
+            </div>
+            <div class="PizzaMore_card__left">
+                <img src="./img-icons/image.png" alt="modalCard-img">
+            </div>
+            <div class="PizzaMore_card__right">
+                <div class="PizzaMore_card__right--info">
+                    <h3>Salsa</h3>
+                    <p>Joʻja, salsa sousi, mayin motsarella pishlogʻi, xalapenyo, bulgʻor qalampiri va pomidorlar</p>
+                </div>
+                <div class="PizzaMore_card__right--btn">
+                    <h4>Pitsa kattaligi</h4>
+                    <div class="inrementVSdecrement">
+                        <button id="deincrement"><img src="./img-icons/minus.svg" alt="minuSVG"></button>
+                        <h5>1 - ta</h5>
+                        <button id="increment"><img src="./img-icons/plus.svg" alt="plusSVG"></button>
+                    </div>
+                    <div class="ingichQalin" id="avv1">
+                        <button id="activeBtn" class="btn">Ingichka</button>
+                        <button id="activeBtn" class="btn">Qalin</button>
+                    </div>
+                    <div class="pricceGo">
+                        <p>55,000 so'm</p>
+                        <button>Savatga qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./js/index.js" type="module">
+
+      
+    </script>
+</body>
+</html>
