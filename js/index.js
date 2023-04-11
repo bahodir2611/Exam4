@@ -1,6 +1,4 @@
 let lists = document.querySelectorAll("a");
-let showModal = document.querySelectorAll('#show-Modal');
-let modal = document.querySelector(".modal")
 let backBtn = document.getElementById('backBtn')
 let cards = document.getElementById('cards')
 
@@ -30,14 +28,6 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-for(let i = 0; i<showModal.length;i++){
-  showModal[i].addEventListener('click',()=>{
-    modal.classList.remove('hidden')
-  })
-  backBtn.addEventListener('click',()=>{
-    modal.classList.add('hidden')
-  })
-}
 
 import db from './db.json' assert {type: 'json'};
 
@@ -91,3 +81,15 @@ cards.innerHTML+=`<div class="wrapper_cards__card" id="show-Modal">
                 </div>
                 <button>${db.qoziqorinli[0].price}</button>
             </div>`
+            let showModal = document.querySelectorAll('#show-Modal')
+            let modal = document.querySelector(".modal")
+              for(let i = 0; i<showModal.length;i++){
+                showModal[i].addEventListener('click',()=>{
+                  modal.classList.remove('hidden')
+                })
+                backBtn.addEventListener('click',()=>{
+                  modal.classList.add('hidden')
+                })
+              }
+        
+            

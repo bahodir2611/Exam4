@@ -316,7 +316,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin-top: 18px;
+  margin-top: 50px;
 }
 .PizzaMore_card__right .pricceGo p {
   font-family: "Roboto";
@@ -332,6 +332,7 @@ body {
   background: #006F4C;
   border-radius: 100px;
   padding: 13px 30px;
+  cursor: pointer;
   border: none;
   font-family: "Roboto";
   font-style: normal;
@@ -347,7 +348,7 @@ body {
 
 .modal {
   width: 100%;
-  height: 100vh;
+  height: 102%;
   top: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3294117647);
@@ -639,7 +640,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin-top: 18px;
+  margin-top: 50px;
 }
 .PizzaMore_card__right .pricceGo p {
   font-family: "Roboto";
@@ -655,6 +656,7 @@ body {
   background: #006F4C;
   border-radius: 100px;
   padding: 13px 30px;
+  cursor: pointer;
   border: none;
   font-family: "Roboto";
   font-style: normal;
@@ -670,7 +672,7 @@ body {
 
 .modal {
   width: 100%;
-  height: 100vh;
+  height: 102%;
   top: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3294117647);
