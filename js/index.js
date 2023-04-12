@@ -53,7 +53,7 @@ cards.innerHTML +=
             
 cards.innerHTML+=`<div class="wrapper_cards__card" id="show-Modal">
                 <div class="wrapper_cards__card-img">
-                    <img src=${db.pishloqli[0].image} alt="">
+                    <img src=${db.pishloqli[0].image} class="rounded" alt="">
                 </div>
                 <div class="wrapper_cards__card-info">
                     <h4>${db.pishloqli[0].title}</h4>
@@ -93,3 +93,9 @@ cards.innerHTML+=`<div class="wrapper_cards__card" id="show-Modal">
               }
         
             
+
+              $(document).ready(function(){
+                $("#show-Modal").click(function(){
+                  $(".rounded").attr("src", $(this).parent().siblings().attr("Src"));
+                })
+              })
